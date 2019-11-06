@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-06T20:41:01 EAT" name="Default suite" finished-at="2019-11-06T20:41:24 EAT" duration-ms="22834">
+    <groups>
+    </groups>
+    <test started-at="2019-11-06T20:41:01 EAT" name="Default test" finished-at="2019-11-06T20:41:24 EAT" duration-ms="22834">
+      <class name="authentication.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:01 EAT" name="beforeSuite" finished-at="2019-11-06T20:41:01 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:01 EAT" name="setupWebDriver" finished-at="2019-11-06T20:41:06 EAT" duration-ms="4356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWebDriver -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:06 EAT" name="beforeClass" finished-at="2019-11-06T20:41:06 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:06 EAT" name="loadWebApplication" finished-at="2019-11-06T20:41:13 EAT" duration-ms="7525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:13 EAT" name="login" data-provider="loginDataProvider" finished-at="2019-11-06T20:41:13 EAT" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@automationpractice.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28328719@Tes?!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:13 EAT" name="afterMethod" finished-at="2019-11-06T20:41:13 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:13 EAT" name="loadWebApplication" finished-at="2019-11-06T20:41:16 EAT" duration-ms="3178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:16 EAT" name="login" data-provider="loginDataProvider" finished-at="2019-11-06T20:41:16 EAT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongEmail@automationpractice.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28328719@Tes?!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:16 EAT" name="loadWebApplication" finished-at="2019-11-06T20:41:20 EAT" duration-ms="3174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:16 EAT" name="afterMethod" finished-at="2019-11-06T20:41:16 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:20 EAT" name="login" data-provider="loginDataProvider" finished-at="2019-11-06T20:41:20 EAT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@automationpractice.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WrongPassword@Tes?!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:20 EAT" name="afterMethod" finished-at="2019-11-06T20:41:20 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:20 EAT" name="loadWebApplication" finished-at="2019-11-06T20:41:23 EAT" duration-ms="3600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:23 EAT" name="login" data-provider="loginDataProvider" finished-at="2019-11-06T20:41:23 EAT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WrongPassword@Tes?!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:23 EAT" name="afterMethod" finished-at="2019-11-06T20:41:23 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:23 EAT" name="tearDownSuite" finished-at="2019-11-06T20:41:24 EAT" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:23 EAT" name="afterClass" finished-at="2019-11-06T20:41:23 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:authentication.LoginTest@4fe767f3]" started-at="2019-11-06T20:41:24 EAT" name="afterSuite" finished-at="2019-11-06T20:41:24 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- authentication.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
