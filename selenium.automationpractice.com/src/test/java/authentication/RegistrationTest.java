@@ -3,11 +3,8 @@ package authentication;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pages.HomePage;
-import com.pages.MyAccountPage;
-import com.pages.RegistrationPage;
-import com.utils.Utils;
-
+import myutilities.AutomationUtils;
+import pages.HomePage;
 import testcommonutils.BaseTest;
 
 public class RegistrationTest extends BaseTest {
@@ -15,7 +12,7 @@ public class RegistrationTest extends BaseTest {
 	@Test(priority = 1)
 	public void registerWithUiqueValidEmailAddess() throws InterruptedException {
 		HomePage.clickSignInLink();
-		authentication.createAnAccount(Utils.generateTestEmail());
+		authentication.createAnAccount(AutomationUtils.generateTestEmail());
       
 	}
 
@@ -24,7 +21,7 @@ public class RegistrationTest extends BaseTest {
 
 		HomePage.clickSignInLink();
 		
-		authentication.createAnAccount(Utils.generateTestEmail());
+		authentication.createAnAccount(AutomationUtils.generateTestEmail());
 		authentication.checkMrRadioButton();
 		
 		//Your personal information
