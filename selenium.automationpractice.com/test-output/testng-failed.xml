@@ -8,8 +8,8 @@
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="setupWebDriver"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
           <include name="afterSuite"/>
-          <include name="f"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="tearDownSuite"/>

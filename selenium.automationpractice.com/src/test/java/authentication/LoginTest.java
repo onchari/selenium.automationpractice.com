@@ -1,15 +1,26 @@
 package authentication;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import maincommonutilis.ExcelDataProviderUtil;
+import myutilities.ExcelDataProviderUtil;
+import pages.AuthenticationPage;
+import pages.HomePage;
+import pages.MyAccountPage;
 import testcommonutils.BaseTest;
 
 public class LoginTest extends BaseTest {
-
-	@Test(dataProvider = "loginDataProvider", dataProviderClass = ExcelDataProviderUtil.class)
-	public void login(String n, String s) {
-		System.out.println("Username is : " + n + " Password is : " + s);
+	
+	@Test(dataProvider = "loginDataProvider", dataProviderClass = ExcelDataProviderUtil.class)	
+	public void loginWithValidCredentials(String username, String password, String flag) {
+		HomePage.clickSignInLink();
+		assertTrue(AuthenticationPage.verifyAuthenticationPageTitle(), "Title Verification failed");
+		authentication.login(username, password);
+		Assert.assertTrue(MyAccountPage.getLogoutLink().isDisplayed());
+		Assert.assertTrue(MyAccountPage.getCustomerName().isDisplayed(), "is not displayed ");
+		
 	}
 
 }

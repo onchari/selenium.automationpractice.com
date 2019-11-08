@@ -1,58 +1,64 @@
 package authentication;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
 
-public class RegistrationTest {
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) {
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-  }
+import com.pages.HomePage;
+import com.pages.MyAccountPage;
+import com.pages.RegistrationPage;
+import com.utils.Utils;
 
-  @AfterMethod
-  public void afterMethod() {
-  }
+import testcommonutils.BaseTest;
 
+public class RegistrationTest extends BaseTest {
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-  }
+	@Test(priority = 1)
+	public void registerWithUiqueValidEmailAddess() throws InterruptedException {
+		HomePage.clickSignInLink();
+		authentication.createAnAccount(Utils.generateTestEmail());
+      
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@Test(priority = 2)
+	public void createAccountSuccessfullyWithAllRequiredValidData() throws InterruptedException {
 
-  @BeforeTest
-  public void beforeTest() {
-  }
-
-  @AfterTest
-  public void afterTest() {
-  }
-
-  @BeforeSuite
-  public void beforeSuite() {
-  }
-
-  @AfterSuite
-  public void afterSuite() {
-  }
+		HomePage.clickSignInLink();
+		
+		authentication.createAnAccount(Utils.generateTestEmail());
+		authentication.checkMrRadioButton();
+		
+		//Your personal information
+		RegistrationPage.clickMrs();
+		RegistrationPage.setcustomerFirstnameField("Onchari");
+		RegistrationPage.setcustomerLastnameField("Wycliffe");
+		//RegistrationPage.setRegistrationEmailAddress("onchari@wycliffe.coma");
+		RegistrationPage.setcustomerPasswordField("fstghfkghgkdhfgkg");
+		RegistrationPage.dateOfBirth("12", "4", 4);
+		
+		RegistrationPage.signupForNewsletter();
+		RegistrationPage.AcceptToReceiveSpecialOffersFromPartners();
+		
+		//Your address
+		RegistrationPage.setFirstname("Onchari");
+		RegistrationPage.setLastName("Wycliffe");
+		RegistrationPage.setCompanyName("Automation Practice Ltd");
+		RegistrationPage.setAddressLine1("The Mirage ");
+		RegistrationPage.setAddressLine2("Nagi Plaza");
+		RegistrationPage.setCity("Nairobi");
+		RegistrationPage.selectState("3");
+		RegistrationPage.setZip_PostalCode("44356");
+		RegistrationPage.selectCountry("21");
+		RegistrationPage.setAdditionalInformation("I am real interesed");
+		RegistrationPage.setHomePhone("07054355756");
+		RegistrationPage.setMMobilePhone("43546577");
+		RegistrationPage.setAliasToaddress("Okonu");;
+		
+		RegistrationPage.submitRegistration();
+		
+		
+		Assert.assertTrue(MyAccountPage.getLogoutLink().isDisplayed());
+		Assert.assertTrue(MyAccountPage.getCustomerName().isDisplayed(), "is not displayed ");
+		
+	}
 
 }
