@@ -1,7 +1,5 @@
 package testcommonutils;
 
-import static org.testng.Assert.assertNotNull;
-
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -11,9 +9,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import myutilities.AutomationUtils;
 import pages.AuthenticationPage;
 import pages.HomePage;
 import pages.MyAccountPage;
@@ -24,9 +23,10 @@ public class BaseTest {
 	public FirefoxDriver driver = null;
 	public static boolean localEnvironment = true;
 	private static final String AUT_URL = "http://automationpractice.com/";
-	protected HomePage homePage = null;
-	protected AuthenticationPage  authentication = null;
-	protected MyAccountPage account = null;
+	protected static HomePage homePage = null;
+	protected static AuthenticationPage  authentication = null;
+	protected static MyAccountPage account = null;
+	protected static AutomationUtils automationUtils = null;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -44,6 +44,7 @@ public class BaseTest {
 		homePage = new HomePage(driver);
 		authentication = new AuthenticationPage(driver);
 		account = new MyAccountPage(driver);
+		automationUtils = new AutomationUtils(driver);
 	}
 
 	@BeforeClass

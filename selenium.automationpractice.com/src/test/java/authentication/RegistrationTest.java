@@ -5,14 +5,16 @@ import org.testng.annotations.Test;
 
 import myutilities.AutomationUtils;
 import pages.HomePage;
+import pages.MyAccountPage;
+import pages.RegistrationPage;
 import testcommonutils.BaseTest;
 
 public class RegistrationTest extends BaseTest {
 
 	@Test(priority = 1)
-	public void registerWithUiqueValidEmailAddess() throws InterruptedException {
+	public void registerWithUiqueValidEmailAddess() {
 		HomePage.clickSignInLink();
-		authentication.createAnAccount(AutomationUtils.generateTestEmail());
+		AutomationUtils.createAnAccount(AutomationUtils.generateTestEmail());
       
 	}
 
@@ -21,7 +23,7 @@ public class RegistrationTest extends BaseTest {
 
 		HomePage.clickSignInLink();
 		
-		authentication.createAnAccount(AutomationUtils.generateTestEmail());
+		authentication.createAnAccount(automationUtils.generateTestEmail());
 		authentication.checkMrRadioButton();
 		
 		//Your personal information
