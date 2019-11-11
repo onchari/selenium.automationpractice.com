@@ -2,7 +2,6 @@ package authentication;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import myutilities.AutomationUtils;
 import pages.HomePage;
 import pages.MyAccountPage;
