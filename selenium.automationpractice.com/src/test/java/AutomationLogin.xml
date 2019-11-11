@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="authentication.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
+<suite parallel="false" name="AuthenticationSuite">
+
+	<test name="AuthenticationSuite"> <!-- Java classes -->
+		<classes>
+			<class name="authentication.LoginTest" />
+			<classes name="authentication.Registration" />
+		</classes>
+
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->
+
+<!-- Suite Test Folder[] - module -->

@@ -11,7 +11,7 @@ import java.util.List;
 public class ClothesPages extends BasePage {
 
 	// New locators
-	private By women = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[1]");
+	private static By women = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[1]");
 	private By dresses = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[2]");
 	private By tshirts = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[3]");
 	private By popularTab = By.xpath("//a[@class =\"homefeatured\"]");
@@ -21,7 +21,7 @@ public class ClothesPages extends BasePage {
 		super(webDriver);
 	}
 
-	public WebElement getWomenClothesBtn() {
+	public static WebElement getWomenClothesBtn() {
 		return AutomationUtils.waitForPresenceOfAutoElement(women);
 	}
 
@@ -33,7 +33,7 @@ public class ClothesPages extends BasePage {
 		return AutomationUtils.waitForPresenceOfAutoElement(tshirts);
 	}
 	
-	public void clickWomenTab() {
+	public static void clickWomenTab() {
 		getWomenClothesBtn().click();
 	}
 	
@@ -76,6 +76,16 @@ public class ClothesPages extends BasePage {
 
 	public List<WebElement> getDressesCount() {
 		return null;
+	}
+	
+	
+	public static void shopForWomenClothes() {
+		clickWomenTab();
+	}
+
+	public static void selectClothToAddToCart() {
+		
+		
 	}
 	
 	
