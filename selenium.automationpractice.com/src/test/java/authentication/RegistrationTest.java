@@ -1,9 +1,11 @@
 package authentication;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import myutilities.AutomationUtils;
+import pages.AuthenticationPage;
 import pages.HomePage;
 import pages.MyAccountPage;
 import pages.RegistrationPage;
@@ -11,20 +13,44 @@ import testcommonutils.BaseTest;
 
 public class RegistrationTest extends BaseTest {
 
-	@Test(priority = 1)
-	public void registerWithUiqueValidEmailAddess() {
-		HomePage.clickSignInLink();
-		AutomationUtils.createAnAccount(AutomationUtils.generateTestEmail());
-      
+
+	// Without email - Invalid email address.
+	@Test
+	public void attemptToLoginWithoutEmail() {
+		HomePage.clickSignInLink();	
+		AuthenticationPage.createAnAccount("");
+		Assert.assertTrue(AuthenticationPage.isErrorMessagePresent("Invalid email address."));
+		
+	}
+	// Wrong email format (mapko89ct, mapko89ct@gmail ...)
+	// Registered email - An account using this email address has already been registered. Please enter a valid password or request a new one. 
+	
+	@Test
+	public void attemptToLoginWithAlreadyRegisteredEmail() {
+		String message = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
+		HomePage.clickSignInLink();	
+		AuthenticationPage.createAnAccount("test1@automationpractice.com");
+		Assert.assertTrue(AuthenticationPage.isErrorMessagePresent(message));
+		
+	}
+	
+	// Correct email 
+	
+	@Test
+	public void attemptingToRegisterWithCorrectEmailAddress() {	
+		HomePage.clickSignInLink();	
+		//AuthenticationPage.createAnAccount(AutomationUtils.generateTestEmail());
+		AuthenticationPage.createAnAccount("test001@automationpractice.com");
+		assertTrue(RegistrationPage.registrationFormIsDisplayed(), "Failed");
 	}
 
-	@Test(priority = 2)
-	public void createAccountSuccessfullyWithAllRequiredValidData() throws InterruptedException {
 
-		HomePage.clickSignInLink();
-		
-		authentication.createAnAccount(automationUtils.generateTestEmail());
-		authentication.checkMrRadioButton();
+	
+	@Test(dependsOnMethods ="attemptingToRegisterWithCorrectEmailAddress" )
+	public void createAccountSuccessfullyWithAllRequiredValidData() throws InterruptedException {
+		HomePage.clickSignInLink();	
+		//AuthenticationPage.createAnAccount(AutomationUtils.generateTestEmail());
+		AuthenticationPage.createAnAccount("test001@automationpractice.com");
 		
 		//Your personal information
 		RegistrationPage.clickMrs();

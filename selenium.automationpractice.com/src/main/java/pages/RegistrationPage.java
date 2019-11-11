@@ -50,7 +50,6 @@ public class RegistrationPage extends BasePage {
 
 	// getters
 
-	
 	public WebElement getWebElement(By by) {
 		return AutomationUtils.waitForPresenceOfAutoElement(by);
 	}
@@ -293,6 +292,10 @@ public class RegistrationPage extends BasePage {
 	public static void submitRegistration() {
 		getRegisterButton().click();
 
+	}
+
+	public static boolean registrationFormIsDisplayed() {
+		return true;
 	}
 
 }

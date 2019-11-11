@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-11T18:05:38Z" name="Default suite" finished-at="2019-11-11T18:05:38Z" duration-ms="29">
+  <suite started-at="2019-11-11T19:45:15Z" name="Default suite" finished-at="2019-11-11T19:46:05Z" duration-ms="49923">
     <groups>
     </groups>
-    <test started-at="2019-11-11T18:05:38Z" name="Default test" finished-at="2019-11-11T18:05:38Z" duration-ms="29">
+    <test started-at="2019-11-11T19:45:15Z" name="Default test" finished-at="2019-11-11T19:46:05Z" duration-ms="49923">
+      <class name="shopworkflow.SelectClothes">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:45:15Z" name="beforeSuite" finished-at="2019-11-11T19:45:15Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:45:15Z" name="setupWebDriver" finished-at="2019-11-11T19:45:22Z" duration-ms="6503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWebDriver -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:45:22Z" name="loadWebApplication" finished-at="2019-11-11T19:45:36Z" duration-ms="13505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:45:22Z" name="beforeClass" finished-at="2019-11-11T19:45:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="selectWomenClothes()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:45:36Z" name="selectWomenClothes" finished-at="2019-11-11T19:46:04Z" duration-ms="28645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectWomenClothes -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:46:04Z" name="afterMethod" finished-at="2019-11-11T19:46:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:46:04Z" name="tearDownSuite" finished-at="2019-11-11T19:46:05Z" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:46:04Z" name="afterClass" finished-at="2019-11-11T19:46:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.SelectClothes@8909f18]" started-at="2019-11-11T19:46:05Z" name="afterSuite" finished-at="2019-11-11T19:46:05Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- shopworkflow.SelectClothes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

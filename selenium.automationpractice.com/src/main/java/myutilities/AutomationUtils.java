@@ -1,5 +1,6 @@
 package myutilities;
 
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -31,14 +32,16 @@ public class AutomationUtils extends BasePage {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 	
-	
+	public static List<WebElement> waitForPresenceOfElements(By locator) {
+		return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));	
+	}
 	
 	
 	 public static String generateTestEmail() {
 
          String generatedEmail ="";
          String prefixString = "@automationpractice.com";
-         String testString = "test"; 
+       
          String email = "";
         
          String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";

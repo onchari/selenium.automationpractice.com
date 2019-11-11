@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import myutilities.AutomationUtils;
 import pages.AuthenticationPage;
+import pages.ClothesPages;
 import pages.HomePage;
 import pages.MyAccountPage;
 
@@ -27,6 +28,7 @@ public class BaseTest {
 	protected static AuthenticationPage  authentication = null;
 	protected static MyAccountPage account = null;
 	protected static AutomationUtils automationUtils = null;
+	protected static ClothesPages clothes = null;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -45,6 +47,7 @@ public class BaseTest {
 		authentication = new AuthenticationPage(driver);
 		account = new MyAccountPage(driver);
 		automationUtils = new AutomationUtils(driver);
+		clothes = new ClothesPages(driver);
 	}
 
 	@BeforeClass
