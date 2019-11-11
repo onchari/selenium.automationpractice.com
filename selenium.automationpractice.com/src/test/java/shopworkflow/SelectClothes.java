@@ -1,4 +1,5 @@
 package shopworkflow;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.ClothesPages;
@@ -11,8 +12,7 @@ public class SelectClothes extends BaseTest {
 		
 		System.out.println("Selecting women clothes");
 		ClothesPages.shopForWomenClothes();
-		ClothesPages.selectClothToAddToCart();
-		
+		Assert.assertTrue(ClothesPages.selectClothToAddToCart());
 	}
 
 }

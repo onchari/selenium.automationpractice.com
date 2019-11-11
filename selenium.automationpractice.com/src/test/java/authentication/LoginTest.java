@@ -46,8 +46,7 @@ public class LoginTest extends BaseTest {
 		assertTrue(AuthenticationPage.verifyAuthenticationPageTitle(), "Title Verification failed");
 		authentication.login(username, password);
 		Assert.assertTrue(MyAccountPage.getLogoutLink().isDisplayed());
-		Assert.assertTrue(MyAccountPage.getCustomerName().isDisplayed(), "is not displayed ");
-		
+		Assert.assertTrue(MyAccountPage.getCustomerName().isDisplayed(), "is not displayed ");	
 	}
 
 }
@@ -57,5 +56,6 @@ public class LoginTest extends BaseTest {
 
 
 //https://stackoverflow.com/questions/48426992/using-selenium-webdriver-with-testng-and-dataproviders-how-to-assert
+//https://github.com/in28minutes/automation-testing-with-java-and-selenium/blob/master/web-driver-4-data-driven-tests/src/test/java/com/in28minutes/datadriventests/LoginDataProviderCompleteTest.java
 
 //https://github.com/bnosrati/Login-Test/blob/master/LoginTest.java

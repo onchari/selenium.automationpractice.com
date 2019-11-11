@@ -11,11 +11,14 @@ import java.util.List;
 public class ClothesPages extends BasePage {
 
 	// New locators
-	private static By women = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[1]");
-	private By dresses = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[2]");
-	private By tshirts = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[3]");
-	private By popularTab = By.xpath("//a[@class =\"homefeatured\"]");
-	private By bestSellers = By.xpath("//a[@class =\"blockbestsellers\"]");
+		private static By women = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[1]");
+		private By dresses = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[2]");
+		private By tshirts = By.xpath("//div[@id = \"block_top_menu\"]/ul/li[3]");
+		private By popularTab = By.xpath("//a[@class =\"homefeatured\"]");
+		private By bestSellers = By.xpath("//a[@class =\"blockbestsellers\"]");
+		
+
+	
 
 	public ClothesPages(WebDriver webDriver) {
 		super(webDriver);
@@ -83,9 +86,18 @@ public class ClothesPages extends BasePage {
 		clickWomenTab();
 	}
 
-	public static void selectClothToAddToCart() {
+	public static boolean selectClothToAddToCart() {
+		By clothesBy  = By.linkText("//a[@class=\"product_img_link\"]/img[@class=\"replace-2x img-responsive\"]");
+		List<WebElement> elements = AutomationUtils.waitForPresenceOfElements(clothesBy);
 		
-		
+		boolean noOfElements = false;
+	   if(elements.size() == 7) {
+		   noOfElements = true;
+	   }else {
+		   noOfElements = false;
+	   }
+	   
+	   return noOfElements;
 	}
 	
 	

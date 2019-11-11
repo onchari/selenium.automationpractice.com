@@ -1,5 +1,6 @@
 package myutilities;
 
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -30,6 +31,11 @@ public class AutomationUtils extends BasePage {
 	public static WebElement waitForVisibilityOfAutoElement(By locator) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
+	
+	public static List<WebElement> waitForPresenceOfElements(By locator) {
+		return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));	
+	}
+	
 	
 	
 	

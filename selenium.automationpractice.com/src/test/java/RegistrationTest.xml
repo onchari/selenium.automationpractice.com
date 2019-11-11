@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Authentication">
- 
-  <test name="RegistrationTests">
-    <classes>
-      <class name="authentication.RegistrationTest"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test name="LoginTests">
-    <classes>
-      <class name="authentication.LoginTest" />
-    </classes>
-  </test> <!-- Test -->
+
+	<test name="MyRegistrationTests">
+		<classes>
+			<class name="authentication.RegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="MyLoginTests">
+		<classes>
+			<class name="authentication.LoginTest">
+				<methods>
+                     <include name="loginWithValidCredentials" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
