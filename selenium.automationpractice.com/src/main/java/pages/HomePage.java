@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
 	//GETTERS
 		
 		private static WebElement getSignInLink() {
-			return AutomationUtils.waitForLinkToBeClickable(signInLink);	
+			return AutomationUtils.waitForElementToBeClickable(signInLink);	
 		}
 		
 		public static AuthenticationPage clickSignInLink() {

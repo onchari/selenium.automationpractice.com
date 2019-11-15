@@ -9,54 +9,53 @@ import myutilities.AutomationUtils;
 public class AuthenticationPage extends BasePage {
 
 	// locators for : error login, email input, create account button, valid email
-	By invalidcreateEmail = By.xpath("//li[contains(text(), \"Invalid email address.\")]");
-	By alreadyExistingEmail = By
-			.xpath("//li[contains(text(), \"An account using this email address has already been registered\")]");
+	private static By invalidcreateEmail = By.xpath("//li[contains(text(), \"Invalid email address.\")]");
+	private static By alreadyExistingEmail = By.xpath("//li[contains(text(), \"An account using this email address has already been registered\")]");
 
-	By invalidloginEmail = By.xpath("//div[@class = \"form-group form-error\"]/input[@id=\"email\"]");
-	static By validLoginEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
+	private static By invalidloginEmail = By.xpath("//div[@class = \"form-group form-error\"]/input[@id=\"email\"]");
+	private static  By validLoginEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
 
 	// create account related
-	static By emailCreate = By.id("email_create");
-	By createEmailRed = By.xpath("//div[@class=\"form-group form-error\"]/input[@id=\"email_create\"]");
-	By createEmailGreen = By.xpath("//div[@class=\"form-group form-ok\"]/input[@id=\"email_create\"]");
-	static By createAccountButton = By.id("SubmitCreate");
+	private static  By emailCreate = By.id("email_create");
+	private static By createEmailRed = By.xpath("//div[@class=\"form-group form-error\"]/input[@id=\"email_create\"]");
+	private static By createEmailGreen = By.xpath("//div[@class=\"form-group form-ok\"]/input[@id=\"email_create\"]");
+	private static  By createAccountButton = By.id("SubmitCreate");
 
-	By loginForm = By.xpath("//form[@id=\"login_form\"]");
-	By emailAddressField = By.id("email");
-	By passwordField = By.id("passwd");
-	By submitLoginBtn = By.id("SubmitLogin");
+	private static By loginForm = By.xpath("//form[@id=\"login_form\"]");
+	private static By emailAddressField = By.id("email");
+	private static By passwordField = By.id("passwd");
+	private static  By submitLoginBtn = By.id("SubmitLogin");
 
-	By forgotPasswordLink = By.xpath("//a[contains(text(), \"Forgot your password?\")]");
-	By isvalidEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
-	By emailAddressRequired = By.xpath("//li[contains(text(), \"An email address required.\")]");
-	By invalidEmailAddress = By.xpath("//li[contains(text(),\"Invalid email address.\")]");
-	By passwordIsRequired = By.xpath("//li[contains(text(), \"Password is required.\")]");
-	By invalidPassword = By.xpath("//li[contains(text(), \"Invalid password.\")]");
-	By authenticationError = By.xpath("//li[contains(text(),\"Authentication failed.\")]");
+	private static By forgotPasswordLink = By.xpath("//a[contains(text(), \"Forgot your password?\")]");
+	private static By isvalidEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
+	private static By emailAddressRequired = By.xpath("//li[contains(text(), \"An email address required.\")]");
+	private static By invalidEmailAddress = By.xpath("//li[contains(text(),\"Invalid email address.\")]");
+	private static By passwordIsRequired = By.xpath("//li[contains(text(), \"Password is required.\")]");
+	private static By invalidPassword = By.xpath("//li[contains(text(), \"Invalid password.\")]");
+	private static By authenticationError = By.xpath("//li[contains(text(),\"Authentication failed.\")]");
 
 	public AuthenticationPage(WebDriver webDriver) {
 		super(webDriver);
 	}
 
 	// GET methods
-	public WebElement getPasswordField() {
+	public static WebElement getPasswordField() {
 		return AutomationUtils.waitForPresenceOfAutoElement(passwordField);
 	}
 
-	public WebElement getEmailAddressField() {
+	public static WebElement getEmailAddressField() {
 		return AutomationUtils.waitForPresenceOfAutoElement(emailAddressField);
 	}
 
-	public WebElement getSignInButton() {
-		return AutomationUtils.waitForLinkToBeClickable(submitLoginBtn);
+	public static WebElement getSignInButton() {
+		return AutomationUtils.waitForElementToBeClickable(submitLoginBtn);
 	}
 
 	public static WebElement getLoginEmailAddressGreen() {
 		return AutomationUtils.waitForVisibilityOfAutoElement(validLoginEmail);
 	}
 
-	public void clearFields(WebElement element) {
+	public static void clearFields(WebElement element) {
 		if (!element.getAttribute("value").isEmpty()) {
 			element.clear();
 		}
@@ -70,7 +69,7 @@ public class AuthenticationPage extends BasePage {
 	}
 
 	// Enter Login Credentials
-	public void setLoginCredentials(String username, String password) {
+	public static void  setLoginCredentials(String username, String password) {
 		clearFields(getEmailAddressField());
 
 		getEmailAddressField().sendKeys(username);
@@ -80,12 +79,12 @@ public class AuthenticationPage extends BasePage {
 	}
 
 	// Click login button.
-	public void clickLoginButton() {
+	public static void clickLoginButton() {
 		getSignInButton().click();
 	}
 
 	// login
-	public MyAccountPage login(String username, String password) {
+	public static MyAccountPage login(String username, String password) {
 		setLoginCredentials(username, password);
 		clickLoginButton();
 		return new MyAccountPage(driver);
@@ -126,7 +125,7 @@ public class AuthenticationPage extends BasePage {
 	}
 
 	private static WebElement getCreateAccountButton() {
-		return AutomationUtils.waitForLinkToBeClickable(createAccountButton);
+		return AutomationUtils.waitForElementToBeClickable(createAccountButton);
 	}
 
 	// --------------setters------------------------------
