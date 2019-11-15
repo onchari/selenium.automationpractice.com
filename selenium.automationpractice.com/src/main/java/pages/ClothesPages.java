@@ -115,7 +115,6 @@ public class ClothesPages extends BasePage {
 
 	public static void continueShopping() {
 		getContinueShoppingBtn().click();
-
 	}
 
 	// checkout button
@@ -125,7 +124,6 @@ public class ClothesPages extends BasePage {
 
 	public static void checkout() {
 		getCheckoutBtn().click();
-
 	}
 
 	public static List<WebElement> getListOfClothes() {
@@ -135,4 +133,10 @@ public class ClothesPages extends BasePage {
 	public static void selectClothToAddToCart(int index) {
 		getListOfClothes().get(index).click();
 	}
+	
+	
+	public void shopForFadedShortSleeveT_shirts() {
+		
+	}
+	
 }
