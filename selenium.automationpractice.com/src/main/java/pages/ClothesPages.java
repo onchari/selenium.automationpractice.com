@@ -135,7 +135,12 @@ public class ClothesPages extends BasePage {
 	}
 	
 	
-	public void shopForFadedShortSleeveT_shirts() {
+	public static void shopWomenClothes(int index) {
+		
+		ClothesPages.shopForWomenClothes();
+		ClothesPages.selectClothToAddToCart(index);
+		ClothesPages.addToCart();
+		
 		
 	}
 	
