@@ -3,19 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="shopworkflow.SelectClothes">
+      <class name="shopworkflow.AddingMultipleClothesToCartTest">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="shopForFadedShortSleeveT_shirts"/>
+          <include name="shoppingCartSummary"/>
           <include name="setupWebDriver"/>
           <include name="afterSuite"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="addThreeWomenClothes"/>
           <include name="tearDownSuite"/>
+          <include name="other"/>
+          <include name="loginToPlaceOrder"/>
           <include name="loadWebApplication"/>
         </methods>
-      </class> <!-- shopworkflow.SelectClothes -->
+      </class> <!-- shopworkflow.AddingMultipleClothesToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
