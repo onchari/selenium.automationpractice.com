@@ -17,6 +17,9 @@ import pages.AuthenticationPage;
 import pages.ClothesPages;
 import pages.HomePage;
 import pages.MyAccountPage;
+import pages.PaymentMethodPage;
+import pages.ShippingPage;
+import pages.ShoppingCartSummary;
 
 public class BaseTest {
 	
@@ -29,7 +32,10 @@ public class BaseTest {
 	protected static MyAccountPage account = null;
 	protected static AutomationUtils automationUtils = null;
 	protected static ClothesPages clothes = null;
-
+	protected static ShippingPage shipping = null;
+	protected static PaymentMethodPage payment = null;
+    protected static ShoppingCartSummary summary = null;
+    
 	@BeforeSuite
 	public void beforeSuite() {
 	}
@@ -48,6 +54,9 @@ public class BaseTest {
 		account = new MyAccountPage(driver);
 		automationUtils = new AutomationUtils(driver);
 		clothes = new ClothesPages(driver);
+		shipping = new ShippingPage(driver);
+		payment = new PaymentMethodPage(driver);
+		summary = new ShoppingCartSummary(driver);
 	}
 
 	@BeforeClass

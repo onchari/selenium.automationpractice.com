@@ -12,7 +12,7 @@ public class SelectClothes extends BaseTest {
 	@Test(dataProvider = "clothesDataProvider", dataProviderClass = ExcelDataProviderUtil.class)	
 	public void shopForFadedShortSleeveT_shirts(int index) {
 
-		ClothesPages.shopWomenClothes(index);
+		//ClothesPages.shopWomenClothes(index);
 		//ClothesPages.proceedToCheckout();
 
 		//ClothesPages.checkout();
