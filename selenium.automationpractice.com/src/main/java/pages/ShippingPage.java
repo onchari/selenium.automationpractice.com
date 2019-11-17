@@ -8,6 +8,9 @@ import myutilities.AutomationUtils;
 
 public class ShippingPage extends BasePage {
 
+	private static By fancyboxError = By.xpath("//p[@class=\"fancybox-error\"]");
+	private static By closefancybox = By.xpath("//a[@class=\"fancybox-item fancybox-close\"]");
+	
 	private static By terms = By.id("cgv");
 
 	public ShippingPage(WebDriver webDriver) {
@@ -23,5 +26,21 @@ public class ShippingPage extends BasePage {
 		WebElement element = getCartSummaryTermsCheckbox();
 		actions.moveToElement(element);
 		element.click();
+	}
+	
+	//----------------Fancy box --------------------------------------------
+	public WebElement getFancyBoxMessage() {
+		return AutomationUtils.waitForPresenceOfAutoElement(fancyboxError);
+	}
+	
+	public static WebElement getFancyBoxCloseBtn() {
+		return AutomationUtils.waitForElementToBeClickable(closefancybox);
+	}
+	
+	public static void closeFancyBoxBtn() throws InterruptedException {
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].click();", getFancyBoxCloseBtn());
+		Thread.sleep(3000);
+		//getFancyBoxCloseBtn().click();;
 	}
 }

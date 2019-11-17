@@ -24,8 +24,7 @@ public class ClothesPages extends BasePage {
 	private static By continueShoppingBy = By.xpath("//span[@title=\"Continue shopping\"]");
 	private static By proceed = By.xpath("//a[@title=\"Proceed to checkout\"]");
 	private static By addToCart = By.xpath("//p[@id=\"add_to_cart\"]/button");
-	private static By allWomenClothes = By
-			.xpath("//a[@class=\"product_img_link\"]/img[@class=\"replace-2x img-responsive\"]");
+	private static By allWomenClothes = By.xpath("//a[@class=\"product_img_link\"]/img[@class=\"replace-2x img-responsive\"]");
 
 	public ClothesPages(WebDriver webDriver) {
 		super(webDriver);
@@ -66,6 +65,11 @@ public class ClothesPages extends BasePage {
 	// continue shopping button
 	private static WebElement getContinueShoppingBtn() {
 		return AutomationUtils.waitForElementToBeClickable(continueShoppingBy);
+	}
+	
+	public static void continueShopping() {
+		getContinueShoppingBtn().click();
+		getWomenClothesBtn().click();
 	}
 
 	
