@@ -1,18 +1,21 @@
 package shopworkflow;
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
+import myutilities.ExcelDataProviderUtil;
+import pages.AuthenticationPage;
 import pages.ClothesPages;
 import testcommonutils.BaseTest;
 
 public class SelectClothes extends BaseTest {
-	
-	@Test
-	public void selectWomenClothes(){
-		
-		System.out.println("Selecting women clothes");
-		ClothesPages.shopForWomenClothes();
-		Assert.assertTrue(ClothesPages.selectClothToAddToCart());
-	}
 
+	@Test(dataProvider = "clothesDataProvider", dataProviderClass = ExcelDataProviderUtil.class)	
+	public void shopForFadedShortSleeveT_shirts(int index) {
+
+		//ClothesPages.shopWomenClothes(index);
+		//ClothesPages.proceedToCheckout();
+
+		//ClothesPages.checkout();
+		//AuthenticationPage.login("test1@automationpractice.com", "28328719@Aut?!");
+	}
 }

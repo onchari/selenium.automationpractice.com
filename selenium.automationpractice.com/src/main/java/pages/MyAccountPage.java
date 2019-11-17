@@ -22,7 +22,7 @@ public class MyAccountPage extends BasePage {
 	}
 	
 	public static WebElement getLogoutLink() {
-		return AutomationUtils.waitForLinkToBeClickable(logoutLink);
+		return AutomationUtils.waitForElementToBeClickable(logoutLink);
 	}
 	
 	//

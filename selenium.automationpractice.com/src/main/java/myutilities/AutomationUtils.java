@@ -6,6 +6,7 @@ import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import pages.BasePage;
@@ -19,11 +20,13 @@ public class AutomationUtils extends BasePage {
 	
 	
 	
-	public static WebElement waitForLinkToBeClickable(By locator) {		
+	public static WebElement waitForElementToBeClickable(By locator) {		
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));	
 	}
 
-
+    public static WebElement waitForElement(WebElement element) {
+		return wait.until(ExpectedConditions.visibilityOf(element));
+	}
 	public static WebElement waitForPresenceOfAutoElement(By locator) {
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));	
 	}
@@ -37,14 +40,11 @@ public class AutomationUtils extends BasePage {
 	}
 	
 	
-	
-	
-	
 	 public static String generateTestEmail() {
 
          String generatedEmail ="";
          String prefixString = "@automationpractice.com";
-         String testString = "test"; 
+       
          String email = "";
         
          String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";

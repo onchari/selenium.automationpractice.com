@@ -145,7 +145,7 @@ public class RegistrationPage extends BasePage {
 	}
 	
 	public static WebElement getRegisterButton() {
-		return AutomationUtils.waitForLinkToBeClickable(submitAccount);
+		return AutomationUtils.waitForElementToBeClickable(submitAccount);
 	}
 	
 
