@@ -16,7 +16,10 @@ public class ShopWorkFlowTest extends BaseTest {
 	public void addThreeWomenClothes() {
 		ClothesPages.getWomenClothesBtn().click();
 		ClothesPages.selectClothToAddToCart(4);
+		
 		ClothesPages.addToCart();
+		
+		
 		ClothesPages.getProceedToCheckoutBtn().click();
 
 		ShoppingCartSummary.clickCheckOutFromCartSummarry();
@@ -41,14 +44,15 @@ public class ShopWorkFlowTest extends BaseTest {
 	public void addPrintedSummerDressWith5PercentDiscount () throws InterruptedException {
 		ClothesPages.selectClothToAddToCart(4);
 		ClothesPages.addToCart();
-		ClothesPages.continueShopping();
+		ClothesPages.clickContinueShoppingBtn();
+		ClothesPages.getWomenClothesBtn().click();
 	}
 	
 	@Test(priority = 3, dependsOnMethods = "addPrintedSummerDressWith5PercentDiscount" )
 	public void addPrintedSummerDressWithoutDiscount () throws InterruptedException {
 		ClothesPages.selectClothToAddToCart(5);
 		ClothesPages.addToCart();	
-		ClothesPages.getProceedToCheckoutBtn().click();
+		ClothesPages.clickProceedToCheckoutBtn();
 	}
 	
 	

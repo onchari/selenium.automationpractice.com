@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import myutilities.AutomationUtils;
 import myutilities.ExcelDataProviderUtil;
 import pages.AuthenticationPage;
 import pages.HomePage;
@@ -44,7 +45,9 @@ public class LoginTest extends BaseTest {
 	public void loginWithValidCredentials(String username, String password, String flag) {
 		HomePage.clickSignInLink();
 		assertTrue(AuthenticationPage.verifyAuthenticationPageTitle(), "Title Verification failed");
-		authentication.login(username, password);
+		
+		AutomationUtils.refreshBrowser();
+		AuthenticationPage.login(username, password);
 		Assert.assertTrue(MyAccountPage.getLogoutLink().isDisplayed());
 		Assert.assertTrue(MyAccountPage.getCustomerName().isDisplayed(), "is not displayed ");	
 	}
