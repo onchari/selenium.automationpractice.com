@@ -1,156 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-17T20:38:21 EAT" name="Default suite" finished-at="2019-11-17T20:39:33 EAT" duration-ms="71322">
+  <suite started-at="2019-11-18T19:26:42 EAT" name="Default suite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="24253">
     <groups>
     </groups>
-    <test started-at="2019-11-17T20:38:21 EAT" name="Default test" finished-at="2019-11-17T20:39:33 EAT" duration-ms="71322">
-      <class name="shopworkflow.ShopWorkFlowTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:21 EAT" name="beforeSuite" finished-at="2019-11-17T20:38:21 EAT" duration-ms="7" status="PASS">
+    <test started-at="2019-11-18T19:26:42 EAT" name="Default test" finished-at="2019-11-18T19:27:06 EAT" duration-ms="24253">
+      <class name="authentication.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:42 EAT" name="beforeSuite" finished-at="2019-11-18T19:26:42 EAT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:21 EAT" name="setupWebDriver" finished-at="2019-11-17T20:38:26 EAT" duration-ms="4699" status="PASS">
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:42 EAT" name="setupWebDriver" finished-at="2019-11-18T19:26:46 EAT" duration-ms="3895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWebDriver -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:26 EAT" name="beforeClass" finished-at="2019-11-17T20:38:26 EAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:46 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:52 EAT" duration-ms="6403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:46 EAT" name="beforeClass" finished-at="2019-11-18T19:26:46 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:26 EAT" name="loadWebApplication" finished-at="2019-11-17T20:38:36 EAT" duration-ms="9491" status="PASS">
+        <test-method signature="loginWithAllBlankFields()[pri:1, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="loginWithAllBlankFields" finished-at="2019-11-18T19:26:52 EAT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method signature="gotoAllWomenClothes()[pri:1, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:36 EAT" name="gotoAllWomenClothes" finished-at="2019-11-17T20:38:39 EAT" duration-ms="2970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoAllWomenClothes -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:39 EAT" name="afterMethod" finished-at="2019-11-17T20:38:39 EAT" duration-ms="1" status="PASS">
+        </test-method> <!-- loginWithAllBlankFields -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="afterMethod" finished-at="2019-11-18T19:26:52 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:39 EAT" name="loadWebApplication" finished-at="2019-11-17T20:38:41 EAT" duration-ms="2742" status="PASS">
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:54 EAT" duration-ms="2088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadWebApplication -->
-        <test-method signature="addPrintedSummerDressWith5PercentDiscount()[pri:2, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:41 EAT" name="addPrintedSummerDressWith5PercentDiscount" finished-at="2019-11-17T20:38:49 EAT" depends-on-methods="shopworkflow.ShopWorkFlowTest.gotoAllWomenClothes" duration-ms="7801" status="PASS">
+        <test-method signature="loginWithBlankPassword()[pri:2, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="loginWithBlankPassword" finished-at="2019-11-18T19:26:54 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addPrintedSummerDressWith5PercentDiscount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:49 EAT" name="afterMethod" finished-at="2019-11-17T20:38:49 EAT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:49 EAT" name="loadWebApplication" finished-at="2019-11-17T20:38:52 EAT" duration-ms="3104" status="PASS">
+        </test-method> <!-- loginWithBlankPassword -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:56 EAT" duration-ms="2070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadWebApplication -->
-        <test-method signature="addPrintedSummerDressWithoutDiscount()[pri:3, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:52 EAT" name="addPrintedSummerDressWithoutDiscount" finished-at="2019-11-17T20:38:59 EAT" depends-on-methods="shopworkflow.ShopWorkFlowTest.addPrintedSummerDressWith5PercentDiscount" duration-ms="6416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPrintedSummerDressWithoutDiscount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:59 EAT" name="afterMethod" finished-at="2019-11-17T20:38:59 EAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="afterMethod" finished-at="2019-11-18T19:26:54 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:38:59 EAT" name="loadWebApplication" finished-at="2019-11-17T20:39:02 EAT" duration-ms="3162" status="PASS">
+        <test-method signature="loginWithWrongPasswordAndEmail()[pri:3, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="loginWithWrongPasswordAndEmail" finished-at="2019-11-18T19:26:56 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPasswordAndEmail -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:59 EAT" duration-ms="2127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadWebApplication -->
-        <test-method signature="name()[pri:4, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:39:02 EAT" name="name" finished-at="2019-11-17T20:39:32 EAT" depends-on-methods="shopworkflow.ShopWorkFlowTest.addPrintedSummerDressWithoutDiscount" duration-ms="30165" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[@class="button btn btn-default standard-checkout button-medium"] (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@class="button btn btn-default standard-checkout button-medium"] (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at myutilities.AutomationUtils.waitForElementToBeClickable(AutomationUtils.java:24)
-at pages.ShoppingCartSummary.getCheckoutBtn(ShoppingCartSummary.java:19)
-at pages.ShoppingCartSummary.clickCheckOutFromCartSummarry(ShoppingCartSummary.java:23)
-at shopworkflow.ShopWorkFlowTest.name(ShopWorkFlowTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class="button btn btn-default standard-checkout button-medium"]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-377NK29', ip: '192.168.5.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 11748, moz:profile: C:\Users\OnchariWycliffe\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 89c98c82-2d82-4508-8522-918e1fca5ddd
-*** Element info: {Using=xpath, value=//a[@class="button btn btn-default standard-checkout button-medium"]}
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 32 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- name -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:39:32 EAT" name="afterMethod" finished-at="2019-11-17T20:39:32 EAT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="afterMethod" finished-at="2019-11-18T19:26:56 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:39:32 EAT" name="afterClass" finished-at="2019-11-17T20:39:32 EAT" duration-ms="1" status="PASS">
+        <test-method signature="loginWithInvalidEmailAddress()[pri:4, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="loginWithInvalidEmailAddress" finished-at="2019-11-18T19:26:59 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:39:32 EAT" name="tearDownSuite" finished-at="2019-11-17T20:39:33 EAT" duration-ms="735" status="PASS">
+        </test-method> <!-- loginWithInvalidEmailAddress -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="afterMethod" finished-at="2019-11-18T19:26:59 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="loadWebApplication" finished-at="2019-11-18T19:27:01 EAT" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadWebApplication -->
+        <test-method signature="loginWithValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:01 EAT" name="loginWithValidCredentials" data-provider="loginDataProvider" finished-at="2019-11-18T19:27:05 EAT" duration-ms="4494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@automationpractice.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28328719@Aut?!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CORRECT_CREDENTIALS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="tearDownSuite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@4c1d9d4b]" started-at="2019-11-17T20:39:33 EAT" name="afterSuite" finished-at="2019-11-17T20:39:33 EAT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="afterClass" finished-at="2019-11-18T19:27:05 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="afterMethod" finished-at="2019-11-18T19:27:05 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:06 EAT" name="afterSuite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- shopworkflow.ShopWorkFlowTest -->
+      </class> <!-- authentication.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
