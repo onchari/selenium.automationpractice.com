@@ -1,8 +1,7 @@
 package shopworkflow;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 import pages.AuthenticationPage;
 import pages.ClothesPages;
 import pages.PaymentMethodPage;
@@ -16,10 +15,9 @@ public class ShopWorkFlowTest extends BaseTest {
 	public void addThreeWomenClothes() {
 		ClothesPages.getWomenClothesBtn().click();
 		ClothesPages.selectClothToAddToCart(4);
-		
+
 		ClothesPages.addToCart();
-		
-		
+
 		ClothesPages.getProceedToCheckoutBtn().click();
 
 		ShoppingCartSummary.clickCheckOutFromCartSummarry();
@@ -35,87 +33,63 @@ public class ShopWorkFlowTest extends BaseTest {
 	}
 
 	@Test(priority = 1)
-	public void gotoAllWomenClothes() {
+	public void gotoAllWomenClothes() throws InterruptedException {
 		ClothesPages.getWomenClothesBtn().click();
-		Assert.assertTrue(true);
+		
 	}
-
-	@Test(priority = 2, dependsOnMethods = "gotoAllWomenClothes" )
-	public void addPrintedSummerDressWith5PercentDiscount () throws InterruptedException {
+	@Test(priority = 2)
+	public void selectCloth1() {
 		ClothesPages.selectClothToAddToCart(4);
 		ClothesPages.addToCart();
-		ClothesPages.clickContinueShoppingBtn();
-		ClothesPages.getWomenClothesBtn().click();
-	}
-	
-	@Test(priority = 3, dependsOnMethods = "addPrintedSummerDressWith5PercentDiscount" )
-	public void addPrintedSummerDressWithoutDiscount () throws InterruptedException {
-		ClothesPages.selectClothToAddToCart(5);
-		ClothesPages.addToCart();	
-		ClothesPages.clickProceedToCheckoutBtn();
-	}
-	
-	
-	@Test(priority = 4, dependsOnMethods = "addPrintedSummerDressWithoutDiscount" )
-	public void name() throws InterruptedException  {
 		
-		ShoppingCartSummary.clickCheckOutFromCartSummarry();
-
-		AuthenticationPage.login("test1@automationpractice.com", "28328719@Aut?!");
-
-		ClothesPages.clickProceedCheckout3();
-
-		ClothesPages.clickprocessCarrier();
-
-		ShippingPage.closeFancyBoxBtn();
-
-		ShippingPage.clickCartSummaryTermsCheckbox();
-
-		ClothesPages.clickprocessCarrier();
-		PaymentMethodPage.selectPaymentMethod(1);
-		PaymentMethodPage.clickIConfirmMyOrderBtn();
-		PaymentMethodPage.getOrderSuccess();
+	
+		ClothesPages.clickContinueShoppingBtn();
+		
 	}
-
+	@Test(priority = 3)
+	public void selectCLoth3() {
 	
+		ClothesPages.getWomenClothesBtn().click();
+		ClothesPages.selectClothToAddToCart(5);
+		ClothesPages.addToCart();
+		ClothesPages.clickProceedToCheckoutBtn();
+		
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	// @Test(priority = 2, dependsOnMethods = "addThreeWomenClothes" )
+	@Test(priority = 4)
 	public void shoppingCartSummary() {
 		ShoppingCartSummary.clickCheckOutFromCartSummarry();
+		
 	}
-
-	// @Test(priority = 3, dependsOnMethods ="shoppingCartSummary" )
-	public void loginToPlaceOrder() {
+	
+	@Test(priority = 5)
+	public void Login() {
 		AuthenticationPage.login("test1@automationpractice.com", "28328719@Aut?!");
 	}
-
-	// @Test(priority = 4 , dependsOnMethods = "loginToPlaceOrder")
-	public void other() {
-		ClothesPages.clickProceedCheckout3();
-		ShippingPage.clickCartSummaryTermsCheckbox();
+	
+	@Test(priority = 6)
+	public void addressDetails() throws InterruptedException {
+		ClothesPages.clickProceedCheckout3();	
+	}
+	
+	@Test(priority = 7)
+	public void shipping() throws InterruptedException {
 		ClothesPages.clickprocessCarrier();
+		ShippingPage.closeFancyBoxBtn();
+		ShippingPage.clickCartSummaryTermsCheckbox();
+		ClothesPages.clickprocessCarrier();	
+	}
+	
+
+	@Test(priority = 8)
+	public void paymentMethods() {
 		PaymentMethodPage.selectPaymentMethod(1);
 		PaymentMethodPage.clickIConfirmMyOrderBtn();
+		
+	}
+	
+	@Test(priority = 9)
+	public void orderSummary() {
 		PaymentMethodPage.getOrderSuccess();
 	}
 

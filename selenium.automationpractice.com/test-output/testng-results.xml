@@ -1,114 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-18T19:26:42 EAT" name="Default suite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="24253">
+  <suite started-at="2019-11-21T21:37:45 EAT" name="Default suite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="44175">
     <groups>
     </groups>
-    <test started-at="2019-11-18T19:26:42 EAT" name="Default test" finished-at="2019-11-18T19:27:06 EAT" duration-ms="24253">
-      <class name="authentication.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:42 EAT" name="beforeSuite" finished-at="2019-11-18T19:26:42 EAT" duration-ms="16" status="PASS">
+    <test started-at="2019-11-21T21:37:45 EAT" name="Default test" finished-at="2019-11-21T21:38:30 EAT" duration-ms="44175">
+      <class name="shopworkflow.ShopWorkFlowTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:45 EAT" name="beforeSuite" finished-at="2019-11-21T21:37:45 EAT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:42 EAT" name="setupWebDriver" finished-at="2019-11-18T19:26:46 EAT" duration-ms="3895" status="PASS">
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:45 EAT" name="setupWebDriver" finished-at="2019-11-21T21:37:50 EAT" duration-ms="4331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWebDriver -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:46 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:52 EAT" duration-ms="6403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:46 EAT" name="beforeClass" finished-at="2019-11-18T19:26:46 EAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:50 EAT" name="beforeClass" finished-at="2019-11-21T21:37:57 EAT" duration-ms="7272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="loginWithAllBlankFields()[pri:1, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="loginWithAllBlankFields" finished-at="2019-11-18T19:26:52 EAT" duration-ms="6" status="PASS">
+        <test-method signature="gotoAllWomenClothes()[pri:1, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:57 EAT" name="gotoAllWomenClothes" finished-at="2019-11-21T21:38:00 EAT" duration-ms="3458" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithAllBlankFields -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="afterMethod" finished-at="2019-11-18T19:26:52 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- gotoAllWomenClothes -->
+        <test-method signature="selectCloth1()[pri:2, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:00 EAT" name="selectCloth1" finished-at="2019-11-21T21:38:05 EAT" duration-ms="4121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:52 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:54 EAT" duration-ms="2088" status="PASS">
+        </test-method> <!-- selectCloth1 -->
+        <test-method signature="selectCLoth3()[pri:3, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:05 EAT" name="selectCLoth3" finished-at="2019-11-21T21:38:09 EAT" duration-ms="4892" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method signature="loginWithBlankPassword()[pri:2, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="loginWithBlankPassword" finished-at="2019-11-18T19:26:54 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- selectCLoth3 -->
+        <test-method signature="shoppingCartSummary()[pri:4, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:09 EAT" name="shoppingCartSummary" finished-at="2019-11-21T21:38:13 EAT" duration-ms="3968" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithBlankPassword -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:56 EAT" duration-ms="2070" status="PASS">
+        </test-method> <!-- shoppingCartSummary -->
+        <test-method signature="Login()[pri:5, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:13 EAT" name="Login" finished-at="2019-11-21T21:38:15 EAT" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:54 EAT" name="afterMethod" finished-at="2019-11-18T19:26:54 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="addressDetails()[pri:6, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:15 EAT" name="addressDetails" finished-at="2019-11-21T21:38:17 EAT" duration-ms="1669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="loginWithWrongPasswordAndEmail()[pri:3, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="loginWithWrongPasswordAndEmail" finished-at="2019-11-18T19:26:56 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- addressDetails -->
+        <test-method signature="shipping()[pri:7, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:17 EAT" name="shipping" finished-at="2019-11-21T21:38:25 EAT" duration-ms="8208" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithWrongPasswordAndEmail -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="loadWebApplication" finished-at="2019-11-18T19:26:59 EAT" duration-ms="2127" status="PASS">
+        </test-method> <!-- shipping -->
+        <test-method signature="paymentMethods()[pri:8, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:25 EAT" name="paymentMethods" finished-at="2019-11-21T21:38:29 EAT" duration-ms="3530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:56 EAT" name="afterMethod" finished-at="2019-11-18T19:26:56 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- paymentMethods -->
+        <test-method signature="orderSummary()[pri:9, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="orderSummary" finished-at="2019-11-21T21:38:29 EAT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="loginWithInvalidEmailAddress()[pri:4, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="loginWithInvalidEmailAddress" finished-at="2019-11-18T19:26:59 EAT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidEmailAddress -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="afterMethod" finished-at="2019-11-18T19:26:59 EAT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:26:59 EAT" name="loadWebApplication" finished-at="2019-11-18T19:27:01 EAT" duration-ms="2333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method signature="loginWithValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:01 EAT" name="loginWithValidCredentials" data-provider="loginDataProvider" finished-at="2019-11-18T19:27:05 EAT" duration-ms="4494" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test1@automationpractice.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[28328719@Aut?!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[CORRECT_CREDENTIALS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="tearDownSuite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownSuite -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="afterClass" finished-at="2019-11-18T19:27:05 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- orderSummary -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="afterClass" finished-at="2019-11-21T21:38:29 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:05 EAT" name="afterMethod" finished-at="2019-11-18T19:27:05 EAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="tearDownSuite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:authentication.LoginTest@3901d134]" started-at="2019-11-18T19:27:06 EAT" name="afterSuite" finished-at="2019-11-18T19:27:06 EAT" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDownSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:30 EAT" name="afterSuite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- authentication.LoginTest -->
+      </class> <!-- shopworkflow.ShopWorkFlowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

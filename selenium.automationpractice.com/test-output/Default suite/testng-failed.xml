@@ -6,15 +6,12 @@
       <class name="shopworkflow.ShopWorkFlowTest">
         <methods>
           <include name="afterClass"/>
-          <include name="addPrintedSummerDressWithoutDiscount"/>
-          <include name="gotoAllWomenClothes"/>
           <include name="beforeSuite"/>
           <include name="setupWebDriver"/>
           <include name="afterSuite"/>
           <include name="name"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="addPrintedSummerDressWith5PercentDiscount"/>
           <include name="tearDownSuite"/>
           <include name="loadWebApplication"/>
         </methods>

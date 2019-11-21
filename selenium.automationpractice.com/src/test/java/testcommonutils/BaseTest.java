@@ -61,13 +61,11 @@ public class BaseTest {
 
 	@BeforeClass
 	public void beforeClass() {
-	}
-
-	@BeforeMethod
-	public void loadWebApplication() {
 		driver.navigate().to(AUT_URL);
 		driver.manage().window().maximize();
 	}
+
+	
 
 	public void setupLocalDriver() {
 		WebDriverManager.firefoxdriver().setup();
@@ -80,10 +78,6 @@ public class BaseTest {
 	
 	
 
-	@AfterMethod
-	public void afterMethod() {
-
-	}
 
 	@AfterClass
 	public void afterClass() {
