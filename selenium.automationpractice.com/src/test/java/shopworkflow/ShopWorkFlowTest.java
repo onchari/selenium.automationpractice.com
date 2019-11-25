@@ -11,44 +11,29 @@ import testcommonutils.BaseTest;
 
 public class ShopWorkFlowTest extends BaseTest {
 
-	// @Test(priority = 1)
-	public void addThreeWomenClothes() {
-		ClothesPages.getWomenClothesBtn().click();
-		ClothesPages.selectClothToAddToCart(4);
-
-		ClothesPages.addToCart();
-
-		ClothesPages.getProceedToCheckoutBtn().click();
-
-		ShoppingCartSummary.clickCheckOutFromCartSummarry();
-
-		AuthenticationPage.login("test1@automationpractice.com", "28328719@Aut?!");
-
-		ClothesPages.clickProceedCheckout3();
-		ShippingPage.clickCartSummaryTermsCheckbox();
-		ClothesPages.clickprocessCarrier();
-		PaymentMethodPage.selectPaymentMethod(1);
-		PaymentMethodPage.clickIConfirmMyOrderBtn();
-		PaymentMethodPage.getOrderSuccess();
-	}
-
 	@Test(priority = 1)
-	public void gotoAllWomenClothes() throws InterruptedException {
-		ClothesPages.getWomenClothesBtn().click();
-		
+	public void displayAllWomenClothes(){
+		ClothesPages.getWomenClothesBtn().click();	
 	}
+	
 	@Test(priority = 2)
 	public void selectCloth1() {
 		ClothesPages.selectClothToAddToCart(4);
-		ClothesPages.addToCart();
-		
-	
-		ClothesPages.clickContinueShoppingBtn();
-		
 	}
-	@Test(priority = 3)
-	public void selectCLoth3() {
 	
+	@Test(priority = 3)
+	private void addToCart() {
+		ClothesPages.addToCart();
+	}
+	
+	
+	@Test(priority = 4)
+	public void continueShopping() {
+		ClothesPages.clickContinueShoppingBtn();
+	}
+	
+	@Test(priority = 5)
+	public void viewDressList() {
 		ClothesPages.getWomenClothesBtn().click();
 		ClothesPages.selectClothToAddToCart(5);
 		ClothesPages.addToCart();
@@ -56,23 +41,23 @@ public class ShopWorkFlowTest extends BaseTest {
 		
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void shoppingCartSummary() {
 		ShoppingCartSummary.clickCheckOutFromCartSummarry();
 		
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 7)
 	public void Login() {
 		AuthenticationPage.login("test1@automationpractice.com", "28328719@Aut?!");
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 8)
 	public void addressDetails() throws InterruptedException {
 		ClothesPages.clickProceedCheckout3();	
 	}
 	
-	@Test(priority = 7)
+	@Test(priority =9)
 	public void shipping() throws InterruptedException {
 		ClothesPages.clickprocessCarrier();
 		ShippingPage.closeFancyBoxBtn();
@@ -81,14 +66,14 @@ public class ShopWorkFlowTest extends BaseTest {
 	}
 	
 
-	@Test(priority = 8)
+	@Test(priority = 10)
 	public void paymentMethods() {
 		PaymentMethodPage.selectPaymentMethod(1);
 		PaymentMethodPage.clickIConfirmMyOrderBtn();
 		
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 11)
 	public void orderSummary() {
 		PaymentMethodPage.getOrderSuccess();
 	}
