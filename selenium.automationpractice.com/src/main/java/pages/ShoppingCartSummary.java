@@ -19,8 +19,8 @@ public class ShoppingCartSummary extends BasePage {
 			return AutomationUtils.waitForElementToBeClickable(checkout);
 		}
 		
-		public static void clickCheckOutFromCartSummarry() {
-			getCheckoutBtn().click();
+		public static void  clickCheckOutFromCartSummarry() {
+			getCheckoutBtn().click();	
 		}
 
 }

@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-16T19:53:39Z" name="Default suite" finished-at="2019-11-16T19:54:22Z" duration-ms="42743">
+  <suite started-at="2019-11-21T21:37:45 EAT" name="Default suite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="44175">
     <groups>
     </groups>
-    <test started-at="2019-11-16T19:53:39Z" name="Default test" finished-at="2019-11-16T19:54:22Z" duration-ms="42743">
-      <class name="shopworkflow.AddingMultipleClothesToCartTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:53:39Z" name="beforeSuite" finished-at="2019-11-16T19:53:39Z" duration-ms="15" status="PASS">
+    <test started-at="2019-11-21T21:37:45 EAT" name="Default test" finished-at="2019-11-21T21:38:30 EAT" duration-ms="44175">
+      <class name="shopworkflow.ShopWorkFlowTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:45 EAT" name="beforeSuite" finished-at="2019-11-21T21:37:45 EAT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:53:39Z" name="setupWebDriver" finished-at="2019-11-16T19:53:47Z" duration-ms="7669" status="PASS">
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:45 EAT" name="setupWebDriver" finished-at="2019-11-21T21:37:50 EAT" duration-ms="4331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWebDriver -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:53:47Z" name="beforeClass" finished-at="2019-11-16T19:53:47Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:50 EAT" name="beforeClass" finished-at="2019-11-21T21:37:57 EAT" duration-ms="7272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="loadWebApplication()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:53:47Z" name="loadWebApplication" finished-at="2019-11-16T19:53:56Z" duration-ms="9256" status="PASS">
+        <test-method signature="gotoAllWomenClothes()[pri:1, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:37:57 EAT" name="gotoAllWomenClothes" finished-at="2019-11-21T21:38:00 EAT" duration-ms="3458" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadWebApplication -->
-        <test-method signature="addThreeWomenClothes()[pri:1, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:53:56Z" name="addThreeWomenClothes" finished-at="2019-11-16T19:54:20Z" duration-ms="24116" status="PASS">
+        </test-method> <!-- gotoAllWomenClothes -->
+        <test-method signature="selectCloth1()[pri:2, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:00 EAT" name="selectCloth1" finished-at="2019-11-21T21:38:05 EAT" duration-ms="4121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addThreeWomenClothes -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:54:20Z" name="afterMethod" finished-at="2019-11-16T19:54:20Z" duration-ms="0" status="PASS">
+        </test-method> <!-- selectCloth1 -->
+        <test-method signature="selectCLoth3()[pri:3, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:05 EAT" name="selectCLoth3" finished-at="2019-11-21T21:38:09 EAT" duration-ms="4892" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:54:20Z" name="tearDownSuite" finished-at="2019-11-16T19:54:22Z" duration-ms="1654" status="PASS">
+        </test-method> <!-- selectCLoth3 -->
+        <test-method signature="shoppingCartSummary()[pri:4, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:09 EAT" name="shoppingCartSummary" finished-at="2019-11-21T21:38:13 EAT" duration-ms="3968" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownSuite -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:54:20Z" name="afterClass" finished-at="2019-11-16T19:54:20Z" duration-ms="0" status="PASS">
+        </test-method> <!-- shoppingCartSummary -->
+        <test-method signature="Login()[pri:5, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:13 EAT" name="Login" finished-at="2019-11-21T21:38:15 EAT" duration-ms="1907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="addressDetails()[pri:6, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:15 EAT" name="addressDetails" finished-at="2019-11-21T21:38:17 EAT" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressDetails -->
+        <test-method signature="shipping()[pri:7, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:17 EAT" name="shipping" finished-at="2019-11-21T21:38:25 EAT" duration-ms="8208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shipping -->
+        <test-method signature="paymentMethods()[pri:8, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:25 EAT" name="paymentMethods" finished-at="2019-11-21T21:38:29 EAT" duration-ms="3530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentMethods -->
+        <test-method signature="orderSummary()[pri:9, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="orderSummary" finished-at="2019-11-21T21:38:29 EAT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderSummary -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="afterClass" finished-at="2019-11-21T21:38:29 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.AddingMultipleClothesToCartTest@4f638935]" started-at="2019-11-16T19:54:22Z" name="afterSuite" finished-at="2019-11-16T19:54:22Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:29 EAT" name="tearDownSuite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.ShopWorkFlowTest@77167fb7]" started-at="2019-11-21T21:38:30 EAT" name="afterSuite" finished-at="2019-11-21T21:38:30 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- shopworkflow.AddingMultipleClothesToCartTest -->
+      </class> <!-- shopworkflow.ShopWorkFlowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

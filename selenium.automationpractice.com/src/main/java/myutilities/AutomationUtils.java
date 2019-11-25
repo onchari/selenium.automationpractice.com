@@ -61,6 +61,17 @@ public class AutomationUtils extends BasePage {
 
         return email;
     }
+	 
+	 
+	 //--------------Refresh browser using JS 
+	 public static void refreshBrowser() {
+		js.executeScript("history.go(0)");
+	}
+	 
+	 //-----scroll the page 
+	 public static void scrollPageHeight() {
+		
+	}
 
 
 
