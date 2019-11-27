@@ -10,4 +10,9 @@ public class CartTest  extends BaseTest{
 	public void test1() {
 		System.out.println("Testing cart");
 	}
+	
+	@Test
+	public void cart() {
+		
+	}
 }
