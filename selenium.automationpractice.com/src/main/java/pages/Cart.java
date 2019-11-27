@@ -1,7 +1,10 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import myutilities.AutomationUtils;
 
 public class Cart extends BasePage {
 
@@ -10,8 +13,23 @@ public class Cart extends BasePage {
 	}
 	
 	
+	static By  cartTab = By.cssSelector("div.shopping_cart");
+	static By cartQty = By.cssSelector("a > span.ajax_cart_quantity");
+	
 	public static WebElement getCartTab() {
-		return null;
+		return AutomationUtils.waitForElementToBeClickable(cartTab);
+	}
+	
+	public static void clickCartTab() {
+		getCartTab().click();
+	}
+	
+	public static WebElement getTotalCartQty() {
+		return AutomationUtils.waitForPresenceOfAutoElement(cartQty);
+	}
+	
+	public static String checkTotalCartQty() {
+		return getTotalCartQty().getText();
 	}
 	
 	public static WebElement getCartEmpty() {

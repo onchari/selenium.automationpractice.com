@@ -14,10 +14,12 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import myutilities.AutomationUtils;
 import pages.AuthenticationPage;
+import pages.Cart;
 import pages.ClothesPages;
 import pages.HomePage;
 import pages.MyAccountPage;
 import pages.PaymentMethodPage;
+import pages.Searching;
 import pages.ShippingPage;
 import pages.ShoppingCartSummary;
 
@@ -35,6 +37,8 @@ public class BaseTest {
 	protected static ShippingPage shipping = null;
 	protected static PaymentMethodPage payment = null;
     protected static ShoppingCartSummary summary = null;
+    protected static Cart cart  = null;
+    protected static Searching searching = null;
     
 	@BeforeSuite
 	public void beforeSuite() {
@@ -57,6 +61,8 @@ public class BaseTest {
 		shipping = new ShippingPage(driver);
 		payment = new PaymentMethodPage(driver);
 		summary = new ShoppingCartSummary(driver);
+		cart = new Cart(driver);
+		searching = new Searching(driver);
 	}
 
 	@BeforeClass

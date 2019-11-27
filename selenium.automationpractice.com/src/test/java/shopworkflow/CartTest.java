@@ -1,14 +1,25 @@
 package shopworkflow;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.Cart;
 import testcommonutils.BaseTest;
 
 public class CartTest  extends BaseTest{
 
-	@Test
-	public void test1() {
+	@Test(priority = 1)
+	public void test1() throws InterruptedException {
 		System.out.println("Testing cart");
+		Cart.clickCartTab();
+		
+		Thread.sleep(5000);
+
+	}
+	
+	@Test
+	public void getAllCartQty() {
+		Assert.assertEquals(Cart.checkTotalCartQty(), 0);
 	}
 	
 	@Test
