@@ -1,4 +1,4 @@
-# selenium.automationpractice.com
+# automationpractice.com
 Issues encountered:
 The website is making heavy use of floating panels, hence it requires a bit more care when using Selenium since elements need to be 
 ready to go before interacting with them; it's often the case that Selenium by default finds these elements quickly before 
