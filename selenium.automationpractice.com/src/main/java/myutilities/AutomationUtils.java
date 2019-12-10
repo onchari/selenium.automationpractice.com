@@ -1,10 +1,18 @@
 package myutilities;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
+import javax.swing.text.DefaultEditorKit.CopyAction;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -87,4 +95,16 @@ public class AutomationUtils extends BasePage {
                 };
         return wait.until(pageLoadCondition);
     }
+	
+	
+	public static void takeSnapShot(WebDriver webDriver, String pathname) {
+		File srcFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
+		try {
+			File destFile = new File(pathname);
+			FileUtils.copyFile(srcFile, destFile );
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
 }
