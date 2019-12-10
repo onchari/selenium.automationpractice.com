@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-27T18:41:47Z" name="Default suite" finished-at="2019-11-27T18:42:36Z" duration-ms="48205">
+  <suite started-at="2019-12-10T13:05:05 EAT" name="Default suite" finished-at="2019-12-10T13:05:27 EAT" duration-ms="21378">
     <groups>
     </groups>
-    <test started-at="2019-11-27T18:41:47Z" name="Default test" finished-at="2019-11-27T18:42:36Z" duration-ms="48205">
-      <class name="shopworkflow.SearchingTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:41:47Z" name="beforeSuite" finished-at="2019-11-27T18:41:47Z" duration-ms="16" status="PASS">
+    <test started-at="2019-12-10T13:05:05 EAT" name="Default test" finished-at="2019-12-10T13:05:27 EAT" duration-ms="21378">
+      <class name="authentication.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:05 EAT" name="beforeSuite" finished-at="2019-12-10T13:05:05 EAT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:41:47Z" name="setupWebDriver" finished-at="2019-11-27T18:41:56Z" duration-ms="8959" status="PASS">
+        <test-method is-config="true" signature="setupWebDriver()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:05 EAT" name="setupWebDriver" finished-at="2019-12-10T13:05:10 EAT" duration-ms="4399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWebDriver -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:41:56Z" name="beforeClass" finished-at="2019-11-27T18:42:12Z" duration-ms="15335" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:10 EAT" name="beforeClass" finished-at="2019-12-10T13:05:20 EAT" duration-ms="10711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="searchSuggestionResults()[pri:1, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:42:12Z" name="searchSuggestionResults" finished-at="2019-11-27T18:42:14Z" duration-ms="1826" status="PASS">
+        <test-method signature="loginWithAllBlankFields()[pri:1, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:20 EAT" name="loginWithAllBlankFields" finished-at="2019-12-10T13:05:20 EAT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchSuggestionResults -->
-        <test-method signature="clickSingleSearchResult()[pri:2, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:42:14Z" name="clickSingleSearchResult" finished-at="2019-11-27T18:42:34Z" duration-ms="20765" status="PASS">
+        </test-method> <!-- loginWithAllBlankFields -->
+        <test-method signature="loginWithBlankPassword()[pri:2, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:20 EAT" name="loginWithBlankPassword" finished-at="2019-12-10T13:05:20 EAT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSingleSearchResult -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:42:34Z" name="afterClass" finished-at="2019-11-27T18:42:34Z" duration-ms="16" status="PASS">
+        </test-method> <!-- loginWithBlankPassword -->
+        <test-method signature="loginWithWrongPasswordAndEmail()[pri:3, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:20 EAT" name="loginWithWrongPasswordAndEmail" finished-at="2019-12-10T13:05:20 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPasswordAndEmail -->
+        <test-method signature="loginWithInvalidEmailAddress()[pri:4, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:20 EAT" name="loginWithInvalidEmailAddress" finished-at="2019-12-10T13:05:20 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidEmailAddress -->
+        <test-method signature="loginWithValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:20 EAT" name="loginWithValidCredentials" data-provider="loginDataProvider" finished-at="2019-12-10T13:05:25 EAT" duration-ms="5107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@automationpractice.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28328719@Aut?!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CORRECT_CREDENTIALS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:25 EAT" name="afterClass" finished-at="2019-12-10T13:05:25 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:42:34Z" name="tearDownSuite" finished-at="2019-11-27T18:42:36Z" duration-ms="1283" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:25 EAT" name="tearDownSuite" finished-at="2019-12-10T13:05:27 EAT" duration-ms="1113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:shopworkflow.SearchingTest@a4102b8]" started-at="2019-11-27T18:42:36Z" name="afterSuite" finished-at="2019-11-27T18:42:36Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:authentication.LoginTest@29176cc1]" started-at="2019-12-10T13:05:27 EAT" name="afterSuite" finished-at="2019-12-10T13:05:27 EAT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- shopworkflow.SearchingTest -->
+      </class> <!-- authentication.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

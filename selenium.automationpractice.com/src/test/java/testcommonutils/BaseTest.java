@@ -92,6 +92,8 @@ public class BaseTest {
 
 	@AfterTest(alwaysRun = true)
 	public void tearDownSuite() {
+		String pathname = "./target/ScreenShots/screenshot.png";
+		AutomationUtils.takeSnapShot(driver, pathname);
 		driver.quit();
 	}
 
