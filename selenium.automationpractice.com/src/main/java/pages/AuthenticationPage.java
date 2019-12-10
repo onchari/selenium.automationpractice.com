@@ -9,31 +9,35 @@ import myutilities.AutomationUtils;
 public class AuthenticationPage extends BasePage {
 
 	// locators for : error login, email input, create account button, valid email
-	private static By invalidcreateEmail = By.xpath("//li[contains(text(), \"Invalid email address.\")]");
-	private static By alreadyExistingEmail = By.xpath("//li[contains(text(), \"An account using this email address has already been registered\")]");
+	 static By invalidcreateEmail = By.xpath("//li[contains(text(), \"Invalid email address.\")]");
+	 static By alreadyExistingEmail = By.xpath("//li[contains(text(), \"An account using this email address has already been registered\")]");
 
-	private static By invalidloginEmail = By.xpath("//div[@class = \"form-group form-error\"]/input[@id=\"email\"]");
-	private static  By validLoginEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
+	 static By invalidloginEmail = By.xpath("//div[@class = \"form-group form-error\"]/input[@id=\"email\"]");
+	 static By validLoginEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
 
 	// create account related
-	private static  By emailCreate = By.id("email_create");
-	private static By createEmailRed = By.xpath("//div[@class=\"form-group form-error\"]/input[@id=\"email_create\"]");
-	private static By createEmailGreen = By.xpath("//div[@class=\"form-group form-ok\"]/input[@id=\"email_create\"]");
-	private static  By createAccountButton = By.id("SubmitCreate");
+	 static  By emailCreate = By.id("email_create");
+	 static By createEmailRed = By.xpath("//div[@class=\"form-group form-error\"]/input[@id=\"email_create\"]");
+	 static By createEmailGreen = By.xpath("//div[@class=\"form-group form-ok\"]/input[@id=\"email_create\"]");
+	 static  By createAccountButton = By.id("SubmitCreate");
 
-	private static By loginForm = By.xpath("//form[@id=\"login_form\"]");
-	private static By emailAddressField = By.id("email");
-	private static By passwordField = By.id("passwd");
-	private static  By submitLoginBtn = By.id("SubmitLogin");
+	 static By loginForm = By.xpath("//form[@id=\"login_form\"]");
+	 static By emailAddressField = By.id("email");
+	 static By passwordField = By.id("passwd");
+	 static  By submitLoginBtn = By.id("SubmitLogin");
 
-	private static By forgotPasswordLink = By.xpath("//a[contains(text(), \"Forgot your password?\")]");
-	private static By isvalidEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
-	private static By emailAddressRequired = By.xpath("//li[contains(text(), \"An email address required.\")]");
-	private static By invalidEmailAddress = By.xpath("//li[contains(text(),\"Invalid email address.\")]");
-	private static By passwordIsRequired = By.xpath("//li[contains(text(), \"Password is required.\")]");
-	private static By invalidPassword = By.xpath("//li[contains(text(), \"Invalid password.\")]");
-	private static By authenticationError = By.xpath("//li[contains(text(),\"Authentication failed.\")]");
+	 static By forgotPasswordLink = By.xpath("//a[contains(text(), \"Forgot your password?\")]");
+	 static By isvalidEmail = By.xpath("//div[@class = \"form-group form-ok\"]/input[@id=\"email\"]");
+	 static By emailAddressRequired = By.xpath("//li[contains(text(), \"An email address required.\")]");
+	 static By invalidEmailAddress = By.xpath("//li[contains(text(),\"Invalid email address.\")]");
+	 static By passwordIsRequired = By.xpath("//li[contains(text(), \"Password is required.\")]");
+	 static By invalidPassword = By.xpath("//li[contains(text(), \"Invalid password.\")]");
+	 static By authenticationError = By.xpath("//li[contains(text(),\"Authentication failed.\")]");
 
+	 
+	 //Errors related 
+	 static By errorPanel = By.cssSelector("div.alert.alert-danger");
+	 static By phoneNumberError = By.cssSelector("p.inline-infos");
 	public AuthenticationPage(WebDriver webDriver) {
 		super(webDriver);
 	}
