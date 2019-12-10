@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -97,14 +98,25 @@ public class AutomationUtils extends BasePage {
     }
 	
 	
+	//Take screenshot
 	public static void takeSnapShot(WebDriver webDriver, String pathname) {
-		File srcFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
 		try {
+			TakesScreenshot takeScreenShot = ((TakesScreenshot)driver);
+			File srcFile = null;
+			srcFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
 			File destFile = new File(pathname);
-			FileUtils.copyFile(srcFile, destFile );
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+			FileHandler.copy(srcFile, destFile);
 		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	// Get test class name
+	public String getTestClassName(String testClass) {
+		String[] className = testClass.split("\\.");
+		int i = className.length - 1;	
+		return className[i];	
 	}
 }
